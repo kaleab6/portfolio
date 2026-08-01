@@ -1,0 +1,133 @@
+/* ===========================
+   FADE IN
+=========================== */
+
+@keyframes fadeUp{
+
+    from{
+        opacity:0;
+        transform:translateY(60px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+
+.hero-text{
+
+    animation:fadeUp .8s ease forwards;
+
+}
+
+.hero-image{
+
+    animation:fadeUp 1.2s ease forwards;
+
+}
+
+/* ===========================
+   FLOAT IMAGE
+=========================== */
+
+@keyframes floating{
+
+    0%{
+        transform:translateY(0);
+    }
+
+    50%{
+        transform:translateY(-18px);
+    }
+
+    100%{
+        transform:translateY(0);
+    }
+
+}
+
+.hero-image img{
+
+    animation:floating 5s ease-in-out infinite;
+
+}
+
+/* ===========================
+   BUTTON HOVER
+=========================== */
+
+.btn{
+
+    transition:.35s;
+
+}
+
+.btn:hover{
+
+    transform:translateY(-5px) scale(1.05);
+
+}
+
+/* ===========================
+   SOCIAL ICONS
+=========================== */
+
+.social-icons a{
+
+    transition:.35s;
+
+}
+
+.social-icons a:hover{
+
+    transform:translateY(-8px) rotate(360deg);
+
+}
+/* ===========================
+   SKILL CARD
+=========================== */
+
+.skill-card{
+    animation:fadeUp .8s ease;
+}
+
+.progress span{
+    animation:growBar 2s ease;
+}
+
+@keyframes growBar{
+
+    from{
+        width:0;
+    }
+
+}
+/* ===========================
+   SCROLL ANIMATION
+=========================== */
+
+.hidden{
+
+    opacity:0;
+
+    transform:translateY(50px);
+
+    transition:1s;
+
+}
+
+
+.show{
+
+    opacity:1;
+
+    transform:translateY(0);
+
+}
+.tech-card{
+
+    animation:fadeUp .8s ease;
+
+}
